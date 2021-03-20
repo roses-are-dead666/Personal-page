@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+
+  
+    <title>Personal Page</title>
+</head>
+<body>
+  
+  <header class="header">
+      <div class="container">
+          <div class="header__inner">
+              
+            <div id="main">
+              <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>  
+           
+          </div>
+                
+                
+            <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">About</a>
+                  <a href="#">Education</a>
+                  <a href="#">Portfolio</a>
+                  <a href="#">Contact</a>
+            </div>
+   
+      </div>
+  </header>
+  
+  <div class="intro">
+      <div class="container">
+        <div class="intro__inner">
+        
+        <h1 class="ml11">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">Hello</span>
+          </span>
+        </h1>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js">
+        </script>
+         
+          
+
+
+            
+        </div>
+        </div>
+      </div>
+ 
+ 
+   
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    }
+</script>
+
+
+<script>
+    
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+    
+</script>
+ 
+ 
+
+
+  
+
+   
+   
+    
+</body>
+</html>
