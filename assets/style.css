@@ -15,6 +15,7 @@ body {
      
 }
 
+
 *,
 *:before,
 *:after {
@@ -107,17 +108,41 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
     color: #cccccc;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .txt-rotate {
     color: #ff6680;
 }
 
+.resume__btn {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #cccccc;
+    color: #cccccc;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    transition: background .2s linear, color .2s linear, border .1s ease;
+    
+    
+}
+
+.resume__btn:hover {
+    background-color: #ff6680;
+    color: #FFF;
+    border: none;
+    
+}
+
+
 
 .sidenav {
+    position: fixed;
     height: 100%;
     width: 0;
-    position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
@@ -131,13 +156,13 @@ h1, h2, h3, h4, h5, h6 {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
 }
+
 
 .sidenav a:hover {
     color: #f1f1f1;
@@ -157,6 +182,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFF;
     opacity: 1;
     transition: 0.2s linear;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 #main:hover {
@@ -303,16 +330,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio__part {
+    
     display: table;
     margin: 0 auto;
     padding-bottom: 100px;
+    
     
 
 }
 
 .portfolio__item {
     width: 100%;
-    
 }
 
 .portfolio__text {
@@ -325,8 +353,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .skill__set {
-    list-style-type: circle;
+    list-style-type: none;
 }
+
+
+
+
+ul li::before {
+    content: "\2022";
+    color: #ff6680;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+   
+    
+}
+
+
 
 
 
@@ -348,6 +392,274 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 30px;
 }
 
+
+.quote__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.quote {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 40px;
+	color: #FFF;
+    text-align: center;
+    line-height: 1.5;
+    text-justify: inter-word;
+    
+}
+
+.flicker {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Montserrat';
+    letter-spacing: 0.7em;
+    font-size: 50px;
+	color: #FFF;
+  
+}
+
+div > .letters {
+	opacity: 0.15;
+}
+#I {
+	opacity: 1;
+	animation: flickerI 2s linear  reverse infinite;
+}
+#I::after {
+	content: '';
+	width: 150%;
+	-webkit-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+	-moz-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+	box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
+}
+
+#L, #G {
+	animation: flickerLG 2s linear reverse infinite;
+	position: relative;
+}
+#L::after, 
+#L::before  {
+	content:' ';
+	width: 100px;
+	height: 100px;
+	background: var(--white);
+	position: absolute;
+	top: -50%;
+	left: 100%;
+	border-radius: 100%;
+	opacity: 0.05;
+	filter: blur(10px);
+}
+#L::after {
+	width: 200px;
+	height: 200px;
+	top: -150%;
+	left: -5%;
+	opacity: 0.1;
+	filter: blur(10px);
+}
+#H {
+	animation: flickerH 2s linear reverse infinite
+}
+
+#T {
+	animation: flickerH 2s linear reverse infinite
+}
+
+@keyframes flickerI {
+	0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flickerLG {
+	0% {
+		opacity: 0.19;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.25;
+	}
+	15% {
+		opacity: 0.35;
+	}
+	25% {
+		opacity: 0.2;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.2;
+	}
+	60% {
+		opacity: 0.4;
+	}
+	70% {
+		opacity: 0.35;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes flickerH {
+	0% {
+		opacity: 0.15;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.12;
+	}
+	15% {
+		opacity: 0.2;
+	}
+	25% {
+		opacity: 0.15;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.05;
+	}
+	40% {
+		opacity: 0.12;
+	}
+	45% {
+		opacity: 0.15;
+	}
+	60% {
+		opacity: 0.3;
+	}
+	70% {
+		opacity: 0.2;
+	}
+	80% {
+		opacity: 0.3;
+	}
+	90% {
+		opacity: 0.18;
+	}
+	100% {
+		opacity: 0.3;
+	}
+}
+
+@keyframes flickerT {
+	0% {
+		opacity: 0.01;
+	}
+	5% {
+		opacity: 0.05;
+	}
+	10% {
+		opacity: 0.03;
+	}
+	15% {
+		opacity: 0.1;
+	}
+	25% {
+		opacity: 0.07;
+	}
+	30% {
+		opacity: 0.1;
+	}
+	35% {
+		opacity: 0.05;
+	}
+	40% {
+		opacity: 0.06;
+	}
+	45% {
+		opacity: 0.1;
+	}
+	60% {
+		opacity: 0.;
+	}
+	70% {
+		opacity: 0.1;
+	}
+	80% {
+		opacity: 0.;
+	}
+	90% {
+		opacity: 0.0;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 .footer__bot {
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
@@ -360,7 +672,11 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: none;
 }
 
-.sm {
+.roses {
+    color: #ff6680;
+}
+
+.icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -368,7 +684,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
 }
 
-.sm a {
+.icons a {
     color: #F2F2F2;
     width: 66px;
     font-size: 24px;
@@ -376,8 +692,8 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
-.sm a:hover {
-    color: #e66767;
+.icons a:hover {
+    color: #ff6680;
 }
 
 
