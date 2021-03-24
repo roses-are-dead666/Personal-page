@@ -33,7 +33,7 @@
           <div class="header__inner">
               
             <div id="main">
-              <span style="font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              <span onclick="openNav()">&#9776;</span>
             </div>  
            
           </div>
@@ -58,6 +58,8 @@
         <h1 class="intro__text">Hello, my name is Arzhan and I'm a:
           <span class="txt-rotate" data-period="2000" data-rotate='[ "developer.", "programmer.", "nerd.", "nice guy." ]'></span>
         </h1>
+          
+            <a class="resume__btn" href="#">download resume</a>
 
           </div>
         </div>
@@ -147,10 +149,14 @@
                         <li>CSS</li>
                         <li>JavaScript</li>
                         <li>Python</li>
-                   </ul> 
+                   </ul>
                 </div>
             </div>
         </div>
+        
+        
+        
+        
         
     </div>
 </section>
@@ -159,8 +165,25 @@
 <footer class="footer" id="Contacts">
    <div class="container">
        <div class="footer__content">
-           <p class="footer__bot">Designed By: <span>@roses-are-dead666</span></p>
-           <div class="sm">
+           <div class="quote__container">
+               <div class="quote">
+                  Long is the way and hard, that out of Hell leads up to:
+                   <div class="flicker">
+                    <span class="letters" id="L">L</span>
+                    <span class="letters" id="I">I</span>
+                    <span class="letters" id="G">G</span>
+                    <span class="letters" id="H">H</span>
+                    <span class="letters" id="T">T</span>
+                   </div>
+              </div>
+            
+          </div>
+
+
+   
+
+           <p class="footer__bot">Designed By: <span class="roses">@roses-are-dead666</span></p>
+           <div class="icons">
                 <a href="https://www.instagram.com/nosacrifice666/" class="fab fa-instagram" target="_blank">
                 </a>
                 <a href="https://twitter.com/ArzhanBakytbek" class="fab fa-twitter" target="_blank">
@@ -181,7 +204,8 @@
    
 <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mySidenav").style.width = "210px";
+      document.getElementById("main").style.display = "none";
       
     }
 
@@ -189,6 +213,7 @@
       document.getElementById("mySidenav").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
       document.body.style.backgroundColor = "white";
+      document.getElementById("main").style.display = "block";
     }
 </script>
 
@@ -245,7 +270,7 @@ window.onload = function() {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // INJECT CSS
+ 
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
