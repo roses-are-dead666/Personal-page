@@ -10,7 +10,7 @@ body {
     background: #f2f2f2;
     margin: 0;
     padding: 0;
-    transition: background-color .5s;
+    
     
      
 }
@@ -51,13 +51,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1520px;
     margin: 0 auto;
+    padding: 0 40px;
     
 }
 
 
-.go__top {
+.go__top  {
     position: fixed;
     width: 50px;
     height: 50px;
@@ -72,6 +73,9 @@ h1, h2, h3, h4, h5, h6 {
     transition-duration: 0.4s;
     border-radius: 50%;
 }
+
+
+
 
 .go__top:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -88,9 +92,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100vh;
     background: linear-gradient( rgba(0, 0, 0, 0.5), 
-    rgba(0, 0, 0, 0.5) ), url(images/bg-01.jpg) center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    rgba(0, 0, 0, 0.5) ), url(images/bg-01.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     
 }
 
@@ -100,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    
 }
 
 
@@ -116,6 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .resume__btn {
+    
     display: inline-block;
     vertical-align: top;
     border: 2px solid #cccccc;
@@ -135,7 +143,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFF;
     border: none;
     
+    
 }
+    
+
 
 
 
@@ -158,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.2s linear;
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
 }
@@ -192,6 +203,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.hor__nav {
+    display: block;
+    text-align: center;
+    
+   
+    
+}
+
+.hor__nav a {
+    text-decoration: none;
+    color: #cccccc;
+    margin: 0 30px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    transition: 0.2s linear;
+    font-weight: 700;
+}
+
+.hor__nav a:hover {
+    color: #f1f1f1;
+}
+
+
 
 .section {
     padding: 40px 0; 
@@ -209,6 +244,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 35px;
     text-transform: uppercase;
+    color: #ff6680;
    
 }
 
@@ -224,69 +260,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__item {
-    width: 50%;
-  
-}
-
-.about__item__img {
-    border-radius: 20px;
-    width: 550px;
-    background-color: #ff6680;
-    position: relative;
-}
-
-.about__item:hover .about__img {
-    transform: translate3d(-10px, -10px, 0);
-    border-radius: 20px;
-}
-
-.about__item:hover .about__img img {
-    opacity: .3;
-    border-radius: 20px;
-}
-
-.about__item:hover .about__img__text{
-    opacity: 1;
-    border-radius: 20px;
-}
-
-.about__img {
-    border-radius: 20px;
-    max-width: 100%;
-    height: auto;
-    background: linear-gradient(to bottom, #ff6abd,#960298);
-    
-    
-    transition: transform .2s linear;
-}
-
-.about__img img {
-    border-radius: 20px;
-    display: block;
-    transition: opacity .2s linear;
-}
-
-.about__img__text {
     width: 100%;
-    color: #FFF;
-    text-transform: uppercase;
-   
-    font-size: 40px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 2;
-    transform: translate3d(0, -50%, 0);
-    opacity: 0;
-    transition: opacity .2s linear;
-    
-    font-family: 'Fredoka One', cursive;
+  
 }
 
 
 .about__header {
-    padding: 0 0 0 30px;
+    text-align: center;
+    
     
 }
 
@@ -295,6 +276,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     
     
+    
+}
+
+.about__quote {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
 }
 
 .about__text {
@@ -303,6 +290,19 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
+}
+
+
+.kaz {
+    text-decoration: underline;
+    color: #111;
+    font-weight: 700;
+    transition: .2s linear;
+}
+
+.kaz:hover {
+    color: #ff6680;
+    
 }
 
 .education__part {
@@ -695,6 +695,165 @@ div > .letters {
 .icons a:hover {
     color: #ff6680;
 }
+
+
+
+
+
+@media (max-width: 1024px) {
+    
+   
+    
+    .section {
+        padding: 25px 0;
+    }
+    
+    .intro__text {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    
+    .resume__btn {
+        font-size: 25px;
+    }
+    
+    
+    #main {
+        display: none;
+    }
+    
+    .go__top {
+        display: none;
+    }
+    
+    .section__title {
+        font-size: 30px;  
+    }
+    
+    .section__header {
+        margin: 0 auto 20px;
+    }
+    
+    .section__text {
+        font-size: 19px;
+    }
+    
+    .about__text {
+        font-size: 20px;
+    }
+    
+    .education__text {
+        font-size: 20px;
+    }
+    
+    .port__text {
+        font-size: 20px;
+    }
+    
+    .portfolio__text {
+        font-size: 22px;
+    }
+    
+    .quote {
+        font-size: 30px;
+    }
+    
+    .quote__container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .flicker {
+        font-size: 35px;
+    }
+    
+    .portfolio__part {
+        padding-bottom: 30px;
+    }
+    
+    .footer__bot {
+        font-size: 20px;
+    }
+    
+    .icons a {
+        font-size: 20px;
+        width: 75px;
+    }
+}
+
+
+@media (max-width: 770px) {
+    
+    
+    
+    .intro__text {
+        font-size: 30px;
+    }
+    
+    .resume__btn {
+        padding: 8px 8px;
+        font-size: 20px;
+    }
+    
+    .section__title {
+        font-size: 25px;
+    }
+    
+    .section__text {
+        font-size: 16px;
+    }
+    
+    .about__text {
+        font-size: 17px;    
+    }
+    
+    .education__text {
+        font-size: 17px;
+    }
+    
+    .port__text {
+        font-size: 18px;
+    }
+    
+    .portfolio__text {
+        font-size: 20px;
+    }
+    
+    .quote__container {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    .footer__content {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .quote {
+        font-size: 25px;
+    }
+    
+    .flicker {
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    
+    .footer__bot {
+        font-size: 18px;
+    }
+    
+    .icons a {
+        font-size: 18px;
+        width: 60px;
+    }
+}
+
+
+
+
+
+
+
 
 
 
