@@ -1,2 +1,2 @@
-# Personal-page666
-https://roses-are-dead666.github.io/Personal-page666/
+# My personal page
+https://roses-are-dead666.github.io/Personal-page/
