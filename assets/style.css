@@ -111,11 +111,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .intro__text {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
     color: #cccccc;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    line-height: 1.4;
 }
 
 .txt-rotate {
@@ -132,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     transition: background .2s linear, color .2s linear, border .1s ease;
     
     
@@ -704,6 +705,14 @@ div > .letters {
     }
 }
 
+@media (max-width: 1520px) {
+    
+    .intro__text {
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+}
+
 
 @media (max-width: 1024px) {
     
@@ -714,12 +723,13 @@ div > .letters {
     }
     
     .intro__text {
-        font-size: 35px;
-        margin-bottom: 30px;
+        font-size: 25px;
+        margin-bottom: 20px;
     }
     
     .resume__btn {
-        font-size: 25px;
+        font-size: 20px;
+        padding: 8px 8px;
     }
     
     
@@ -744,11 +754,11 @@ div > .letters {
     }
     
     .about__text {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .education__text {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .port__text {
@@ -760,7 +770,7 @@ div > .letters {
     }
     
     .quote {
-        font-size: 30px;
+        font-size: 27px;
     }
     
     .quote__container {
@@ -792,12 +802,13 @@ div > .letters {
     
     
     .intro__text {
-        font-size: 30px;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
     
     .resume__btn {
-        padding: 8px 8px;
-        font-size: 20px;
+        padding: 6px 6px;
+        font-size: 15px;
     }
     
     .section__title {
@@ -857,62 +868,64 @@ div > .letters {
 @media (max-width: 575px) {
     
     .intro__text {
-        font-size: 31px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
     
     .resume__btn {
-        padding: 10px 10px;
-        font-size: 22px;
+        padding: 6px 6px;
+        font-size: 16px;
     }
     
     .section {    
         padding: 13px 0;
     }
     
-  
-    
     .about__text {
-        font-size: 20px;
+        font-size: 16px;
         
     }
     
     .section__title {
-        font-size: 30px;
+        font-size: 21px;
     }
     
     .section__text {
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .education__text {
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .port__text {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .portfolio__text {
-        font-size: 23px;
+        font-size: 20px;
     }
     
     .quote {
-        font-size: 20px;
+        font-size: 12px;
         
     }
     
     .flicker {
-        font-size: 30px;
+        font-size: 20px;
+        padding-top: 10px;
     }
     
     .footer__bot {
-        font-size: 16px;
+        font-size: 19px;
         
     }
     
+    
+    
     .icons a {
-        font-size: 16px;
-        width: 55px;
+        font-size: 20px;
+        width: 65px;
     }
 }
 
