@@ -498,11 +498,11 @@ ul li::before {
     }
     
     .footer__bot {
-        font-size: 15px;
+        font-size: 20px;
     }
     
     .icons a {
-        font-size: 15px;
+        font-size: 20px;
         width: 50px;
     }
 }
@@ -566,11 +566,11 @@ ul li::before {
     }
     
     .footer__bot {
-        font-size: 13px;
+        font-size: 15px;
     }
     
     .icons a {
-        font-size: 13px;
+        font-size: 15px;
         width: 40px;
     }
 }
@@ -628,13 +628,13 @@ ul li::before {
     }
     
     .footer__bot {
-        font-size: 10px;
+        font-size: 13px;
         
     }
     
     
     .icons a {
-        font-size: 10px;
+        font-size: 13px;
         width: 35px;
     }
 }
