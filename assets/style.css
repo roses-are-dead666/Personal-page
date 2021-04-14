@@ -400,6 +400,20 @@ ul li::before {
 
 .roses {
     color: #ff6680;
+    
+    
+}
+
+.riza {
+    color: red;
+}
+
+.riza span {
+    color: #FFF;
+}
+
+.fas fa-heart {
+    
 }
 
 .icons {
