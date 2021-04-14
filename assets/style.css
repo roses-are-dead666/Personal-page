@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .go__top:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color: #111;
+    background-color: #0d0d0d;
     color: #FFF;
     
 }
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url(images/bg-03big.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg1.jpg);
     
     background-repeat: no-repeat;
     background-position: center;
@@ -123,18 +123,23 @@ h1, h2, h3, h4, h5, h6 {
     color: #ff6680;
 }
 
+
+.btn__res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .resume__btn {
-    
-    display: inline-block;
-    vertical-align: top;
-    border: none;
+    border: 2px solid #ff6680;
     color: #FFF;
-    padding: 15px 15px;
+    padding: 20px 70px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s linear;
     background-color: #ff6680;
       
 }
@@ -143,6 +148,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     color: #FFF;
     text-shadow: 1px 1px 5px black;
+    border: 2px solid #FFF;
     
 }
 
@@ -156,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #ff6680;
+    background-color: #0d0d0d;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 45px;
@@ -176,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .sidenav a:hover {
-    color: #111;
+    color: #ff6680;
 }
 
 .sidenav .closebtn {
@@ -227,35 +233,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .section {
-    padding: 40px 0; 
+    padding: 30px 0; 
     
 }
 
 .section__header {
     width: 100%;
     max-width: 900px;
-    margin: 0 auto 40px;
+    margin: 0 auto 20px;
     text-align: center;
 }
 
 .section__title {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
+    font-size: 45px;
     text-transform: uppercase;
     color: #ff6680;
    
 }
-
-
-
-.section__text {
-    font-family: 'Niconne', cursive;
-    font-size: 23px;
-    
-    
-}
-
-
 
 .about__part {
     display: flex;
@@ -290,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 .about__text {
     font-family: 'Ubuntu', sans-serif;
     font-size: 26px;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -319,7 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 .education__text {
     font-family: 'Ubuntu', sans-serif;
     font-size: 26px;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -348,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolio__text {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.5;
     
     
@@ -374,14 +369,9 @@ ul li::before {
 }
 
 
-
-
-
-
-
 .footer {
     position: absolute;  
-    background: #111;
+    background: #0d0d0d;
     height: auto;
     width: 100%;
     text-align: center;
@@ -396,275 +386,8 @@ ul li::before {
 }
 
 
-.quote__container {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-    
-}
-
-.quote {
-    font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 0.3em;
-    font-size: 20px;
-	color: #FFF;
-    text-align: center;
-    line-height: 1.5;
-    text-justify: inter-word;
-    
-}
-
-.flicker {
-    padding-top: 15px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    letter-spacing: 0.7em;
-    font-size: 22px;
-	color: #FFF;
-  
-}
-
-div > .letters {
-	opacity: 0.15;
-}
-#I {
-	opacity: 1;
-	animation: flickerI 2s linear  reverse infinite;
-}
-#I::after {
-	content: '';
-	width: 150%;
-	-webkit-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
-	-moz-box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
-	box-shadow: -35px 0px 60px 8px rgba(255,255,255,1);
-}
-
-#L, #G {
-	animation: flickerLG 2s linear reverse infinite;
-	position: relative;
-}
-#L::after, 
-#L::before  {
-	content:' ';
-	width: 100px;
-	height: 100px;
-	background: var(--white);
-	position: absolute;
-	top: -50%;
-	left: 100%;
-	border-radius: 100%;
-	opacity: 0.05;
-	filter: blur(10px);
-}
-#L::after {
-	width: 200px;
-	height: 200px;
-	top: -150%;
-	left: -5%;
-	opacity: 0.1;
-	filter: blur(10px);
-}
-#H {
-	animation: flickerH 2s linear reverse infinite
-}
-
-#T {
-	animation: flickerH 2s linear reverse infinite
-}
-
-@keyframes flickerI {
-	0% {
-		opacity: 0.4;
-	}
-	5% {
-		opacity: 0.5;
-	}
-	10% {
-		opacity: 0.6;
-	}
-	15% {
-		opacity: 0.85;
-	}
-	25% {
-		opacity: 0.5;
-	}
-	30% {
-		opacity: 1;
-	}
-	35% {
-		opacity: 0.1;
-	}
-	40% {
-		opacity: 0.25;
-	}
-	45% {
-		opacity: 0.5;
-	}
-	60% {
-		opacity: 1;
-	}
-	70% {
-		opacity: 0.85;
-	}
-	80% {
-		opacity: 0.4;
-	}
-	90% {
-		opacity: 0.5;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flickerLG {
-	0% {
-		opacity: 0.19;
-	}
-	5% {
-		opacity: 0.2;
-	}
-	10% {
-		opacity: 0.25;
-	}
-	15% {
-		opacity: 0.35;
-	}
-	25% {
-		opacity: 0.2;
-	}
-	30% {
-		opacity: 0.4;
-	}
-	35% {
-		opacity: 0.1;
-	}
-	40% {
-		opacity: 0.25;
-	}
-	45% {
-		opacity: 0.2;
-	}
-	60% {
-		opacity: 0.4;
-	}
-	70% {
-		opacity: 0.35;
-	}
-	80% {
-		opacity: 0.4;
-	}
-	90% {
-		opacity: 0.2;
-	}
-	100% {
-		opacity: 0.4;
-	}
-}
-
-@keyframes flickerH {
-	0% {
-		opacity: 0.15;
-	}
-	5% {
-		opacity: 0.2;
-	}
-	10% {
-		opacity: 0.12;
-	}
-	15% {
-		opacity: 0.2;
-	}
-	25% {
-		opacity: 0.15;
-	}
-	30% {
-		opacity: 0.4;
-	}
-	35% {
-		opacity: 0.05;
-	}
-	40% {
-		opacity: 0.12;
-	}
-	45% {
-		opacity: 0.15;
-	}
-	60% {
-		opacity: 0.3;
-	}
-	70% {
-		opacity: 0.2;
-	}
-	80% {
-		opacity: 0.3;
-	}
-	90% {
-		opacity: 0.18;
-	}
-	100% {
-		opacity: 0.3;
-	}
-}
-
-@keyframes flickerT {
-	0% {
-		opacity: 0.01;
-	}
-	5% {
-		opacity: 0.05;
-	}
-	10% {
-		opacity: 0.03;
-	}
-	15% {
-		opacity: 0.1;
-	}
-	25% {
-		opacity: 0.07;
-	}
-	30% {
-		opacity: 0.1;
-	}
-	35% {
-		opacity: 0.05;
-	}
-	40% {
-		opacity: 0.06;
-	}
-	45% {
-		opacity: 0.1;
-	}
-	60% {
-		opacity: 0.;
-	}
-	70% {
-		opacity: 0.1;
-	}
-	80% {
-		opacity: 0.;
-	}
-	90% {
-		opacity: 0.0;
-	}
-	100% {
-		opacity: 0.1;
-	}
-}
-
-
-
-
-
-
-
-
-
-
 .footer__bot {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Ubuntu', sans-serif;
     color: #FFF;
     text-transform: capitalize;
@@ -690,7 +413,7 @@ div > .letters {
 .icons a {
     color: #F2F2F2;
     width: 66px;
-    font-size: 20px;
+    font-size: 25px;
     transition: .3s linear;
     text-decoration: none;
 }
@@ -721,7 +444,7 @@ div > .letters {
    
     
     .section {
-        padding: 25px 0;
+        padding: 20px 0;
     }
     
     .intro__text {
@@ -731,15 +454,14 @@ div > .letters {
     
     .resume__btn {
         font-size: 25px;
-        padding: 12px 12px;
-    }
-    
-    
-    #main {
-        display: none;
+        padding: 15px 45px;
     }
     
     .go__top {
+        display: none;
+    }
+    
+    #main {
         display: none;
     }
     
@@ -748,7 +470,7 @@ div > .letters {
     }
     
     .section__header {
-        margin: 0 auto 20px;
+        margin: 0 auto 10px;
     }
     
     .section__text {
@@ -769,19 +491,6 @@ div > .letters {
     
     .portfolio__text {
         font-size: 22px;
-    }
-    
-    .quote {
-        font-size: 15px;
-    }
-    
-    .quote__container {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .flicker {
-        font-size: 20px;
     }
     
     .portfolio__part {
@@ -809,7 +518,7 @@ div > .letters {
     }
     
     .resume__btn {
-        padding: 10px 10px;
+        padding: 12px 45px;
         font-size: 20px;
     }
     
@@ -870,12 +579,12 @@ div > .letters {
 @media (max-width: 575px) {
     
     .intro__text {
-        font-size: 25px;
+        font-size: 22px;
         margin-bottom: 10px;
     }
     
     .resume__btn {
-        padding: 8px 8px;
+        padding: 10px 35px;
         font-size: 20px;
     }
     
