@@ -117,6 +117,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 30px;
     line-height: 1.4;
+    font-weight: 400;
+    
 }
 
 .txt-rotate {
@@ -177,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.2s linear;
     font-family: 'Ubuntu', sans-serif;
     font-size: 33px;
+    font-weight: 300;
     
 }
 
@@ -249,6 +252,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 45px;
     text-transform: uppercase;
     color: #ff6680;
+    
+    
    
 }
 
@@ -288,6 +293,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
+    font-weight: 300;
 }
 
 
@@ -317,11 +323,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
+    font-weight: 300;
 }
 
 
 .port__text {
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -345,6 +352,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 26px;
     line-height: 1.5;
+    font-weight: 300;
     
     
 }
@@ -387,10 +395,11 @@ ul li::before {
 
 
 .footer__bot {
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Ubuntu', sans-serif;
     color: #FFF;
     text-transform: capitalize;
+    font-weight: 300;
 }
 
 
@@ -400,21 +409,23 @@ ul li::before {
 
 .roses {
     color: #ff6680;
-    
-    
+        
+}
+
+.footer__riza {
+    color: #FFF;
+    font-size: 23px;
+    font-weight: 300;
 }
 
 .riza {
+    color: #ff6680;
+}
+
+.heart {
     color: red;
 }
 
-.riza span {
-    color: #FFF;
-}
-
-.fas fa-heart {
-    
-}
 
 .icons {
     display: flex;
@@ -422,14 +433,16 @@ ul li::before {
     align-items: center;
     justify-content: center;
     margin: 10px 0;
+    
 }
 
 .icons a {
     color: #F2F2F2;
     width: 66px;
-    font-size: 25px;
+    font-size: 23px;
     transition: .3s linear;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .icons a:hover {
@@ -515,6 +528,11 @@ ul li::before {
         font-size: 20px;
     }
     
+    .footer__riza {
+        font-size: 20px;
+    }
+
+
     .icons a {
         font-size: 20px;
         width: 50px;
@@ -570,16 +588,12 @@ ul li::before {
         padding-bottom: 20px;
     }
     
-    .quote {
-        font-size: 13px;
-    }
-    
-    .flicker {
-        font-size: 16px;
-        padding-top: 10px;
-    }
     
     .footer__bot {
+        font-size: 15px;
+    }
+    
+    .footer__riza {
         font-size: 15px;
     }
     
@@ -603,7 +617,7 @@ ul li::before {
     }
     
     .section {    
-        padding: 13px 0;
+        padding: 20px 0;
     }
     
     .about__text {
@@ -631,19 +645,14 @@ ul li::before {
         font-size: 20px;
     }
     
-    .quote {
-        font-size: 10px;
-        
-    }
-    
-    .flicker {
-        font-size: 15px;
-        padding-top: 10px;
-    }
     
     .footer__bot {
         font-size: 13px;
         
+    }
+    
+    .footer__riza {
+        font-size: 13px;
     }
     
     
