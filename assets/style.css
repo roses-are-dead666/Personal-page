@@ -412,20 +412,6 @@ ul li::before {
         
 }
 
-.footer__riza {
-    color: #FFF;
-    font-size: 23px;
-    font-weight: 300;
-}
-
-.riza {
-    color: #ff6680;
-}
-
-.heart {
-    color: red;
-}
-
 
 .icons {
     display: flex;
@@ -528,10 +514,6 @@ ul li::before {
         font-size: 20px;
     }
     
-    .footer__riza {
-        font-size: 20px;
-    }
-
 
     .icons a {
         font-size: 20px;
@@ -593,9 +575,6 @@ ul li::before {
         font-size: 15px;
     }
     
-    .footer__riza {
-        font-size: 15px;
-    }
     
     .icons a {
         font-size: 15px;
@@ -650,12 +629,7 @@ ul li::before {
         font-size: 13px;
         
     }
-    
-    .footer__riza {
-        font-size: 13px;
-    }
-    
-    
+ 
     .icons a {
         font-size: 13px;
         width: 35px;
